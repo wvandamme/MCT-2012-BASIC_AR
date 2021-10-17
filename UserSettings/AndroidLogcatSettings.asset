@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "ce031713588130420c",
         "name": "com.DefaultCompany.AndroidAR",
-        "processId": 7454,
+        "processId": 17511,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -30,6 +30,60 @@
             "deviceId": "ce031713588130420c",
             "name": "com.DefaultCompany.AndroidAR",
             "processId": 7454,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 32675,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 1854,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 6173,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 7889,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 10421,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 13541,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 14879,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 16599,
+            "exited": false
+        },
+        {
+            "deviceId": "ce031713588130420c",
+            "name": "com.DefaultCompany.AndroidAR",
+            "processId": 17511,
             "exited": false
         }
     ],
