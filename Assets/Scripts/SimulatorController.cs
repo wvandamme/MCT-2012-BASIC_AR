@@ -53,7 +53,7 @@ public class SimulatorController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(mouse_position);

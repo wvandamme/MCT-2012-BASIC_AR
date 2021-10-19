@@ -12,8 +12,10 @@ public class PlaneObserver : MonoBehaviour
     private Vector2 screenpoint = new Vector2(Screen.width / 2, Screen.height / 2);
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-    private void FixedUpdate()
+    private void Update()
     {
+        if (app.RunsInSimulator()) return;
+
         if (raycast_manager.Raycast(screenpoint, hits))
         {
             app.EnableARCursor(hits[0].pose.position, hits[0].pose.rotation);

@@ -100,29 +100,44 @@ public class AppManager : MonoBehaviour
 
     public void DisableARCursor()
     {
-        //ARCursor.SetActive(false);
+        ARCursor.SetActive(false);
+    }
+
+    public bool RunsInSimulator()
+    {
+#if UNITY_EDITOR
+        return true;
+#else
+        return false;
+#endif
     }
 
     void Update()
     {
       
+        //ophalen aantal vingers
         if (Input.touchCount != 1) return;
 
+        //eerste touch opvragen
         Touch touch = Input.GetTouch(0);
 
+        //touch bevat informatie over waar de touch zich bevindt
+        //ik pas voor bestaande gameobjects
         if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
         {
             return;
         }
 
+        //touch in unity wordt zo aangemaakt
         if ((touch.phase == TouchPhase.Ended) && (last_phase != TouchPhase.Ended))
         {
             if (ARCursor.activeSelf)
-            {
+            { 
+                //destroy na 2 seconden
+                //Object.Destroy(Instantiate(TouchPrefab, ARCursor.transform.position, ARCursor.transform.rotation),2.0f);
                 Instantiate(TouchPrefab, ARCursor.transform.position, ARCursor.transform.rotation);
             }
         }
-
         last_phase = touch.phase;
 
     }
